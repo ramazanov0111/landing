@@ -1,0 +1,539 @@
+/*Типографика: заголовки, оформление текста*/
+#header span {
+    display: block;
+    font: italic 40px 'PT Sans Narrow';
+    color: white;
+    text-align: center;
+    margin-top: 4em;
+}
+h1 {
+    font-size: 4.7em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0.5em;
+}
+h2 {
+    font: bold 2.5em 'PT Sans Narrow', sans-serif;
+    text-align: center;
+    color: #222;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+h3{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5em 0 0.5em 0;
+    color: #222;
+}
+#portfolio .box3 h3{
+    padding: 0.5em 0 0 0;  
+}
+#portfolio .box3 span {
+    font-size: 1em;
+    font-style: italic;
+    color: #b1b1b1;
+}
+#portfolio span{
+    margin-bottom: 50px;
+}
+.box3 p {
+    font-size: 1em;
+    color: #c2c2c2;
+}
+#button {
+    display: block;
+    width: 240px;
+    text-align: center;
+    margin: 2em auto 8.3em auto;
+    background-color: #fed136;
+    font: bold 18px 'PT Sans Narrow';
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 3px;
+}
+#button:hover {
+    background-color: #ffb841;
+}
+
+/*Макет: Layout*/
+#page {
+    width: 100%;
+    font-size: 100%;
+    font-family: 'PT Sans Narrow';
+}
+#header {
+    background: url(../img/logo.jpg) center top no-repeat; 
+}
+.layout {
+    width: 940px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.clr {
+    clear: both;
+}
+.layout img {
+    margin-top: 2em;
+}
+menu {
+    width: 55%;
+    float: right;
+    margin-top: 40px;
+}
+menu li{
+    float: left;
+    list-style-type: none;
+    margin: 0 25px 0 0;
+}
+menu a {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a:hover {
+    color: #fed136;
+}
+
+
+/*Макет: Services*/
+#services {
+    background-color: white;
+	padding-bottom: 200px;
+}
+.subtitle {
+    display: block;
+    text-align: center;
+    font: italic 1em 'PT Sans Narrow', sans-serif;
+    color: #c2c2c2;
+}
+.box3 {
+    width: 31%;
+    padding: 0 1% 0 1%;
+    float: left;
+    text-align: center;
+}
+
+
+
+/*Макет: Portfolio*/
+#portfolio {
+    background: #f7f7f7;
+    width: 100%;
+    margin-bottom: 6.88em;
+}
+#portfolio .box3 {
+    margin: 0 3.5% 3.125em 0;
+    padding: 0;
+    background-color: white;
+    padding-bottom: 2em;
+}
+#portfolio .last {
+    margin-right: -33px;
+}
+#portfolio img {
+	margin: 0;
+}
+
+
+
+/*HOVER*/
+.link {
+	display: block;
+	text-decoration: none;
+	height: 300px;
+	overflow: hidden;
+}
+#portfolio .box3 img{
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    border: none;
+}
+#portfolio .box3 div{
+    width: auto;
+    height: 300px;
+    position: relative;
+    background-color: RGBA(0,0,0,0.7);
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: linear;
+    transform: rotate(0);
+    opacity: 0;
+}
+#portfolio .box3 div span{
+    display: block;
+    width: 60%;
+    margin: 50% auto;
+    padding: 0.5em 10px 0.5em 10px;
+    font: bold 1em 'PT Sans Narrow', sans-serif;
+    color: #e4b66e;
+    border: 4px solid #e4b66e;
+    text-transform: uppercase;
+}
+#portfolio .box3 a:hover img{
+    margin-top: -20px;
+}
+#portfolio .box3 a:hover div{
+    transform: rotate(6deg);
+    bottom: 300px;
+    opacity: 1;
+}
+
+
+/*Макет: About*/
+#about{
+    background-color: white;
+    margin-bottom: 6.88em;
+    width: 100%;
+}
+.border{
+    width:50%;
+    border-right: 3px solid #f2f1f3;
+}
+.level{
+    position: relative;
+    overflow: hidden;
+	margin-bottom: 85px;
+}
+.level h3{
+   text-transform: uppercase; 
+   padding-top:36px;
+}
+.level h4{
+    font: bold 1em 'PT Sans Narrow', sans-serif;
+    color: #0e0e0e;
+}
+.level p{
+    color: #a0999c;
+}
+.level img{
+    display: block;
+    border: 8px solid #f3f3f3;
+    border-radius: 184px;
+}
+.level:nth-child(odd){
+    text-align: right;
+    left: 19.57%;
+}
+.level:nth-child(odd) img{
+    float: right;
+    margin-left: 6.81%; 
+}
+.level:nth-child(even){
+    text-align: right;
+    left: 80%;
+}
+.level:nth-child(even) img{
+    float: left;
+    margin-right: 6.81%; 
+}
+.level a:hover img{
+	border-color: #fed136;
+}
+
+
+/*Макет: Team*/
+#team {
+	background-color: #f7f7f7;
+	width: 100%;
+	padding-bottom: 200px;
+}
+
+#team p{
+	color: #a0999c;
+}
+
+#team img {
+	border: 8px solid #ffffff;
+	border-radius: 184px;
+} 
+.resume {
+	font: normal 1em 'PT Sans Narrow', sans-serif;
+	text-align: center;
+	color: #a0999c; 
+	padding-top: 2.5em;
+}
+
+#team h3 {
+	padding-top: 0.5em;  
+}
+
+div .social {
+	text-align: center;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.social a{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	border: 3px solid #040406;
+	border-radius: 184px;
+	margin: 0 3px 0 3px;
+	background: url(../img/social-sprite.png) no-repeat;
+}
+
+.social .tw {
+	background-position: 0 0;
+}
+.tw:hover{
+	background-position: 0 -38px;
+	border-color: #5fd6ea;
+	background-color: #5fd6ea;
+}
+
+.social .fb {
+	background-position: -38px 0;
+}
+.fb:hover{
+	background-position: -38px -38px;
+	border-color: #1f508a;
+	background-color: #1f508a;
+} 
+
+.social .pint {
+	background-position: -76px 0;
+}
+.pint:hover{
+	background-position: -76px -38px;
+	border-color: #d14d4b;
+	background-color: #d14d4b;
+} 
+
+.social .google {
+	background-position: -114px 0;
+}
+.google:hover{
+	background-position: -114px -38px;
+	border-color: #dd5144;
+	background-color: #dd5144;
+} 
+
+
+/*Макет: Partner*/
+#partner {
+	background-color: #f7f7f7;
+	width: 100%;
+	padding-bottom: 200px;
+}
+
+div #slider {
+	position: relative;
+	height: 10em;
+}
+
+div #container {
+	position: absolute;
+	top: 1em;
+	left: 6%;
+	height: 7.5em;
+	width: 87%;
+	overflow: hidden;
+}
+
+ #container img {
+	 position: absolute;
+	 top: 0px;
+	 height: 7.5em;
+	 width: 305px;
+	 cursor: pointer;
+	 overflow: hidden;
+ }
+ 
+ #carouselLeft {
+	 position: relative;
+	 top: 2.5em;
+	 left: 0px;
+	 cursor: pointer;
+	 opacity: 0.6;
+ }
+ 
+ #carouselRight {
+	 position: relative;
+	 top: 2.5em;
+	 left: 87%;
+	 cursor: pointer;
+	 opacity: 0.6;
+ }
+ 
+ #carouselLeft:hover{
+    opacity: 0.9;
+}
+
+ #carouselRight:hover{
+	opacity: 0.9;
+}
+
+#map {
+    width: 100%;
+	background-attachment: fixed;
+}
+
+#map .layout1 {
+	margin: 0 auto;
+    overflow:hidden;
+}
+
+#contact {
+    background: url(../img/map.png) right top no-repeat #1d1b1b;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+#contact h2 {
+    color: #FFFFFF;
+}
+
+.box2 {
+    width: 48%;
+    float: left;
+    padding-right: 2%;
+}
+
+#contact input[type="text"] {
+    width: 92%;
+    margin: 1em 4%;
+    font: 1em 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    padding-bottom: 1em;
+}
+
+#contact textarea {
+    width: 92%;
+    margin: 1em 4%;
+    font: 1em 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 4px;
+    padding-bottom: 1em;
+}
+
+textarea {
+    height: 9.75em;
+    resize: none;
+}
+
+#contact input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	background: #ffd10a;
+	font-size: 1.125em;
+	text-transform: uppercase;
+	color: #1d1b1b;
+	cursor: pointer;
+	padding: 1em 50px;
+	border-radius: 4px;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #ffb841;
+}
+
+input:focus::-webkit-input-placeholder{
+  color: transparent
+}
+
+textarea:focus::-webkit-input-placeholder{
+  color: transparent
+}
+
+/*Макет: Footer*/
+
+#footer {
+	background-color: #f7f7f7;
+	width: 100%;
+	padding-bottom: 200px;
+	padding-top: 200px;
+}
+
+div .social1 {
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 30px;
+	width: 33%;
+	vertical-align: middle;
+}
+
+.social1 a{
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	border: 3px solid #040406;
+	border-radius: 184px;
+	margin: 0 3px 0 3px;
+	background: url(../img/social-sprite.png) no-repeat;
+}
+
+.social1 .tw1{
+	background-position: 0 -38px;
+	background-color: #040406;
+}
+.tw1:hover{
+	background-position: 0 -38px;
+	border-color: #5fd6ea;
+	background-color: #5fd6ea;
+}
+
+.social1 .fb1 {
+	background-position: -38px -38px;
+	background-color: #040406;
+}
+.fb1:hover{
+	background-position: -38px -38px;
+	border-color: #1f508a;
+	background-color: #1f508a;
+} 
+
+.social1 .pint1 {
+	background-position: -76px -38px;
+	background-color: #040406;
+}
+.pint1:hover{
+	background-position: -76px -38px;
+	border-color: #d14d4b;
+	background-color: #d14d4b;
+} 
+
+.social1 .google1 {
+	background-position: -114px -38px;
+	background-color: #040406;
+}
+.google1:hover{
+	background-position: -114px -38px;
+	border-color: #dd5144;
+	background-color: #dd5144;
+} 
+
+div .copyright {
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 30px;
+	width: 33%;
+	vertical-align: middle;
+}
+
+div .end {
+	display: inline-block;
+	text-align: center;
+	overflow: hidden;
+	margin-top: 30px;
+	width: 33%;
+}
+
+.copyright p {
+	font-weight: 600;
+	font-size: 16px;
+}
